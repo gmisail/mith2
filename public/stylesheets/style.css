@@ -1,5 +1,5 @@
 html {
-
+  margin: 1%;
 }
 
 body {
@@ -7,8 +7,12 @@ body {
 }
 
 
-#subtitle {
-  font: 16px;
+#console {
+  font-family: monospace;
+  background-color: black;
+  color: white;
+
+  padding: 4px;
 }
 
 #header {
