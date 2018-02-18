@@ -11,8 +11,7 @@ var CodeView = {
     run: function()
     {
         var script = CodeView.editor.value;
-        CodeView.addToConsole("Running code...");
-        
+        English.read(script);
     },
 
     init: function()
@@ -20,5 +19,3 @@ var CodeView = {
         CodeView.runButton.onclick = CodeView.run;
     }
 }
-
-CodeView.init();
