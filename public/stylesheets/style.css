@@ -10,10 +10,19 @@ body {
   font: 14px Helvetica, Arial, sans-serif;
 }
 
+.container {
+  padding: 2%;
+}
+
+#subtitle {
+  font: 16px;
+}
+
 #header {
   padding: 2%;
   background-color: #ff3f31;
 
+  font-family: 'Comfortaa', cursive;
   color: white;
   font-size: 24px;
 }
