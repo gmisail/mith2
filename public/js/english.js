@@ -47,4 +47,3 @@ data:{}, functions:{},
 }
 English.read("variable x equals 3");
 console.log(English.data.x);
-//comment
