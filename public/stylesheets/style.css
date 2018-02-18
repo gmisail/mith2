@@ -1,0 +1,30 @@
+html {
+  margin: 1%;
+}
+
+body {
+  font: 14px Helvetica, Arial, sans-serif;
+}
+
+
+#console {
+  font-family: monospace;
+  background-color: black;
+  color: white;
+
+  padding: 4px;
+}
+
+#header {
+
+  font-family: 'Comfortaa', cursive;
+  color: black;
+}
+
+#extension-style {
+  color: #ff3f31;
+}
+
+a {
+  color: #00B7FF;
+}
