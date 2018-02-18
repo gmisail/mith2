@@ -4,9 +4,9 @@ var English = {
     read: function(source) {
         var linArray = source.split("\n");
         bool = true;
-         functionBuffer = [];
-         functionBufferNum = 0;
-         for(f = 0; f < linArray.length; f++){
+        // functionBuffer = [];
+        //  functionBufferNum = 0;
+        /*   for(f = 0; f < linArray.length; f++){
                if(linArray[f] = "function"){
                    boolB = true
                    funWord = 3;
@@ -23,8 +23,8 @@ var English = {
                        }
                    }
                }
-            }
-       // while (bool) {
+            }*/
+      //  while (bool) {
             for (lin = 0; lin < linArray.length; lin++) {
                 var srcArray = linArray[lin].split(" ");
                 for (i = 0; i < srcArray.length; i++) {
@@ -42,8 +42,8 @@ var English = {
                     if (lin = linArray.length - 1){
                         bool = false;
                     } 
-                }
-         //   }
+           //     }
+            }
         }
     }
 }
