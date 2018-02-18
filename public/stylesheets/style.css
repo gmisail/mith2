@@ -1,21 +1,24 @@
 html {
-  margin: 0px;
-  padding: 0px;
+
 }
 
 body {
-  padding: 0px;
-  margin: 0px;
-
   font: 14px Helvetica, Arial, sans-serif;
 }
 
-#header {
-  padding: 2%;
-  background-color: #ff3f31;
 
-  color: white;
-  font-size: 24px;
+#subtitle {
+  font: 16px;
+}
+
+#header {
+
+  font-family: 'Comfortaa', cursive;
+  color: black;
+}
+
+#extension-style {
+  color: #ff3f31;
 }
 
 a {
