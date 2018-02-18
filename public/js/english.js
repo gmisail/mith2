@@ -79,7 +79,14 @@ var English = {
                     if (srcArray[i + 1] == "print") {
                         var textBuffer = "";
                         for (var chunk = 2; chunk < srcArray.length; chunk++) {
-                            textBuffer += srcArray[chunk] + " ";
+                            if(srcArray[chunk].charAt(0) == "@"){
+                                var d = srcArray[chunk].substring(1);
+                                console.log(d);
+                                textBuffer += English.data[d] + " ";
+                                //console.log();
+                            }else{
+                                textBuffer += srcArray[chunk] + " ";
+                            }
                         }
 
                         // console.log(textBuffer);
