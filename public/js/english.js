@@ -9,7 +9,24 @@ var English = {
     read: function(source) {
         console.log(source);
         var lineArray = source.split("\n");
-        //sep
+        var allLinesArray = source.split(" ");
+        for(i = 0; i < allLinesArray.length; i++){
+            if(allLinesArray[i] == "#")
+            {
+                for(j = i; j < allLinesArray.length; j++)
+                if(allLinesArray[i] != '\n'){
+                    allLinesArray[i]=="";
+                    break;
+                }
+                else{
+                    allLinesArray[i]=="";
+                }
+            }
+        }
+        for(i = 0; i < allLinesArray.length; i++){
+            source = "";
+            source += allLinesArray[i];
+        }
         var allLinesArray = source.split(" ");
         amountFunction = 0;
         amountEnd = 0;
@@ -44,8 +61,6 @@ var English = {
                 }
             }
         }
-
-        //sep
         for (line = 0; line < lineArray.length; line++) {
             var srcArray = lineArray[line].split(" ");
             for (i = 0; i < srcArray.length; i++) {
@@ -74,7 +89,7 @@ var English = {
                 if (srcArray[i] == "divide") {
                     English.data[srcArray[i - 3]] = parseInt(srcArray[i - 1]) / parseInt(srcArray[i + 1]);
                 }
-
+//paste from here
                 if (srcArray[i] == "call") {
                     if (srcArray[i + 1] == "print") {
                         var textBuffer = "";
