@@ -119,7 +119,9 @@ var English = {
                             }
                         }
                         // console.log(textBuffer);
-                        
+                        if(textBuffer.indexOf("undefined") != -1)
+                        CodeView.addToConsole("[EnglishScript] Error: Variable not defined");
+                        else
                         CodeView.addToConsole(textBuffer);
                     }
                     else
